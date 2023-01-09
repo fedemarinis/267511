@@ -47,7 +47,7 @@
 ### Section 
 ![Alt text](ai_img/section12.png)
 ### Garment Group 
-![Alt text](ai_img/garment12.png)
+![Alt text](ai_img/garment13.png)
 
 ### Moving into the colours information, we have many different columns about that and so we have a pretty wide range of options to choose from. 
 ### A good idea may be to analyse the columns and evaluate which one fits better for our final models. we come up that the perceived colour master column seems to be a middle ground between the other columns, having 18 values’ category, compared to 7 of the perceived colour value  column and the 46 of colour group column. So we visualize the distribution of the colour master dataframe. 
