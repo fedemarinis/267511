@@ -37,7 +37,7 @@
 ### Using the product's type and product's group information (categorization) can help the recommendation system understand the context and similarity of the articles, and make more relevant recommendations to the customers. So what we will do is to take into account both categorization, since using only one of these categorizations (e.g., product type) may not provide enough context for the recommendation system to make informed recommendations.
 ### We compute the number of articles for each product’s type, sorting them in descending order to have a better insight.  
 ![Alt text](ai_img/type8.png)
-### Then we follow the same process for each product’s group 
+### Then we follow the same process for each product’s group:
 ![Alt text](ai_img/group9.png)
 ### For the sake of completeness, we plot a bar plot for the following columns: 
 ### Department 
