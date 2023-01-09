@@ -20,16 +20,16 @@
 
 ### we see that the histogram of the age column  is not very symmetrical, but neither it has an highly skewed distribution. Furthermore, the missing values are numerical and there are very few of them. In addition, the mean is a good summary statistic that represents the central tendency of the data, and replacing the missing values with the mean can help preserve the statistical properties of the data. So let's proceed and replace the null values with the mean of the non-null values.
 ### The next step is to categorize customers and we think about 5 different ways to categorize them: 
-### 1. by the newsletter subscription status 
+### 1. By the Newsletter Subscription status 
 ![Alt text](ai_img/piechar_sub2.png)
-### 2. by the club membership status 
+### 2. By the Club Membership status 
 ![Alt text](ai_img/piechart_memb3.png)
-### 3. by age group 
+### 3. By Age Group 
 ![Alt text](ai_img/age_group5.png)
-### 4. by newsletter subscription status combined with age group categorization 
+### 4. By Newsletter Subscription status combined with Age Group categorization 
 ![Alt text](ai_img/group_sub.png)
-### 5. by club membership status combined with age group categorization 
-![Alt text](ai_img/agroup_club.png)
+### 5. By Club Membership status combined with Age Group categorization 
+![Alt text](ai_img/group_club.png)
 ### Then we move to the article’s dataset EDA.
 ### As we did before, we handle null values. In this case, null values are encoded as unknown/-1 and, since there are very few of them (1.03%) we decide to drop the rows containing them. 
 ### Then we move to article’s categorization and we can do it in different ways. Looking into the dataset, we see that each article belongs to multiple category: the product's type and the product's group.
