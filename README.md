@@ -21,9 +21,11 @@
 ### we see that the histogram of the age column  is not very symmetrical, but neither it has an highly skewed distribution. Furthermore, the missing values are numerical and there are very few of them. In addition, the mean is a good summary statistic that represents the central tendency of the data, and replacing the missing values with the mean can help preserve the statistical properties of the data. So let's proceed and replace the null values with the mean of the non-null values.
 ### The next step is to categorize customers and we think about 5 different ways to categorize them: 
 ### 1. by the newsletter subscription status 
-![pie_newsletter!](/ai_img/piechar_sub2.png “Pie Chart Newsletter Subscritpion”)
-### 2. by the club membership status ![pie_membership!](/ai_img/piechart_memb3.png “Pie Chart Club Membership”)
-### 3. by age group ![age_group!](/ai_img/age_group5.png “Age Group Histogram)
+![Alt text](ai_img/piechar_sub2.png)
+### 2. by the club membership status 
+![Alt text](ai_img/piechart_memb3.png)
+### 3. by age group 
+![Alt text](ai_img/age_group5.png)
 ### 4. by newsletter subscription status combined with age group categorization ![group_sub!](/ai_img/group_sub.png “Newsletter Subscription/Age Group Histogram)
 ### 5. by club membership status combined with age group categorization ![group_club!](/ai_img/group_club.png “Club Membership/Age Group Histogram)
 
