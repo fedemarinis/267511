@@ -17,11 +17,11 @@
 ### When performing EDA, a crucial role is played by Null values, so we first check how many nulls there are in the dataset. Given that there are different ways to handle null values, and we don’t want to reduce the sample size and eventually bias the results, we impute missing values with some estimated value, such as using the mean, median or mode of the non-missing values for that feature.  Let’s see age column’s histogram (where null values appear) ![age_hist!](/ai_img/age_hist1.png “Age Histogram”)
 ### we see that the histogram of the age column  is not very symmetrical, but neither it has an highly skewed distribution. Furthermore, the missing values are numerical and there are very few of them. In addition, the mean is a good summary statistic that represents the central tendency of the data, and replacing the missing values with the mean can help preserve the statistical properties of the data. So let's proceed and replace the null values with the mean of the non-null values.
 ### The next step is to categorize customers and we think about 5 different ways to categorize them: 
-1. by the newsletter subscription status ![pie_newsletter!](/ai_img/piechar_sub2.png “Pie Chart Newsletter Subscritpion”)
-2. by the club membership status ![pie_membership!](/ai_img/piechart_memb3.png “Pie Chart Club Membership”)
-3. by age group ![age_group!](/ai_img/age_group5.png “Age Group Histogram)
-4. by newsletter subscription status combined with age group categorization ![group_sub!](/ai_img/group_sub.png “Newsletter Subscription/Age Group Histogram)
-5. by club membership status combined with age group categorization ![group_club!](/ai_img/group_club.png “Club Membership/Age Group Histogram)
+### 1. by the newsletter subscription status ![pie_newsletter!](/ai_img/piechar_sub2.png “Pie Chart Newsletter Subscritpion”)
+### 2. by the club membership status ![pie_membership!](/ai_img/piechart_memb3.png “Pie Chart Club Membership”)
+### 3. by age group ![age_group!](/ai_img/age_group5.png “Age Group Histogram)
+### 4. by newsletter subscription status combined with age group categorization ![group_sub!](/ai_img/group_sub.png “Newsletter Subscription/Age Group Histogram)
+### 5. by club membership status combined with age group categorization ![group_club!](/ai_img/group_club.png “Club Membership/Age Group Histogram)
 
 ### Then we move to the article’s dataset EDA.
 ### As we did before, we handle null values. In this case, null values are encoded as unknown/-1 and, since there are very few of them (1.03%) we decide to drop the rows containing them. 
