@@ -16,6 +16,7 @@
 ### The very first thing we do before writing the algorithm, is perform an explanatory data analysis for every dataset, starting from customer dataset.
 ### When performing EDA, a crucial role is played by Null values, so we first check how many nulls there are in the dataset. Given that there are different ways to handle null values, and we don’t want to reduce the sample size and eventually bias the results, we impute missing values with some estimated value, such as using the mean, median or mode of the non-missing values for that feature.  Let’s see age column’s histogram (where null values appear) 
 ![age_hist1!](ai_img/age_hist_1.png “Age Histogram”)
+![Alt text](ai_img/age_hist_1.png)
 
 ### we see that the histogram of the age column  is not very symmetrical, but neither it has an highly skewed distribution. Furthermore, the missing values are numerical and there are very few of them. In addition, the mean is a good summary statistic that represents the central tendency of the data, and replacing the missing values with the mean can help preserve the statistical properties of the data. So let's proceed and replace the null values with the mean of the non-null values.
 ### The next step is to categorize customers and we think about 5 different ways to categorize them: 
