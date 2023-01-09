@@ -1,6 +1,7 @@
-# 267511
+# Recommender System
+
+Andrea Magri, Federico De Marinis, Riccardo Milano
+
 ## ciao 
-### ciao
-# ciao 
-## ciao 
-### ciaoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+### ciaoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
