@@ -26,19 +26,32 @@
 ![Alt text](ai_img/piechart_memb3.png)
 ### 3. by age group 
 ![Alt text](ai_img/age_group5.png)
-### 4. by newsletter subscription status combined with age group categorization ![group_sub!](/ai_img/group_sub.png “Newsletter Subscription/Age Group Histogram)
-### 5. by club membership status combined with age group categorization ![group_club!](/ai_img/group_club.png “Club Membership/Age Group Histogram)
-
+### 4. by newsletter subscription status combined with age group categorization 
+![Alt text](ai_img/group_sub.png)
+### 5. by club membership status combined with age group categorization 
+![Alt text](ai_img/agroup_club.png)
 ### Then we move to the article’s dataset EDA.
 ### As we did before, we handle null values. In this case, null values are encoded as unknown/-1 and, since there are very few of them (1.03%) we decide to drop the rows containing them. 
 ### Then we move to article’s categorization and we can do it in different ways. Looking into the dataset, we see that each article belongs to multiple category: the product's type and the product's group.
 ### The first column is more specific, the second one instead is slightly more generic. 
 ### Using the product's type and product's group information (categorization) can help the recommendation system understand the context and similarity of the articles, and make more relevant recommendations to the customers. So what we will do is to take into account both categorization, since using only one of these categorizations (e.g., product type) may not provide enough context for the recommendation system to make informed recommendations.
-### We compute the number of articles for each product’s type, sorting them in descending order to have a better insight.  ![type!](/ai_img/type8.png “Article’s Type Bar Plot)
-### Then we follow the same process for each product’s group ![group!](/ai_img/group9.png “Article’s Group Histogram)
-### For the sake of completeness, we plot a bar plot for the following columns: department ![department!](/ai_img/department10.png “Article’s Department Bar Plot), index group ![index!](/ai_img/index_group11.png “Article’s Index Group Bar Plot),  section ![section!](/ai_img/section12.png “Article’s Section Bar Plot), garment group ![garment!](/ai_img/garment12.png “Article’s Garment Bar Plot). 
+### We compute the number of articles for each product’s type, sorting them in descending order to have a better insight.  
+![Alt text](ai_img/type8.png)
+### Then we follow the same process for each product’s group 
+![Alt text](ai_img/group9.png)
+### For the sake of completeness, we plot a bar plot for the following columns: 
+### Department 
+![Alt text](ai_img/department10.png)
+### Index Group 
+![Alt text](ai_img/index_group11.png)
+### Section 
+![Alt text](ai_img/section12.png)
+### Garment Group 
+![Alt text](ai_img/garment12.png)
+
 ### Moving into the colours information, we have many different columns about that and so we have a pretty wide range of options to choose from. 
-### A good idea may be to analyse the columns and evaluate which one fits better for our final models. we come up that the perceived colour master column seems to be a middle ground between the other columns, having 18 values’ category, compared to 7 of the perceived colour value  column and the 46 of colour group column. So we visualize the distribution of the colour master dataframe ![colour!](/ai_img/colour14.png “Article’s Colour Bar Plot). 
+### A good idea may be to analyse the columns and evaluate which one fits better for our final models. we come up that the perceived colour master column seems to be a middle ground between the other columns, having 18 values’ category, compared to 7 of the perceived colour value  column and the 46 of colour group column. So we visualize the distribution of the colour master dataframe. 
+![Alt text](ai_img/colour14.png)
 
 ### Now that our analysis on article's dataset is completed, we can move to the last, and probably most important, dataset.
 ### This dataset is very compact: it has a very small number of columns, indeed it has only the strictly necessary information for the transaction itself, which are the customer's ID, the article's ID and the date when the transaction occurred. It has a very large amount of data stored (369113).
@@ -46,11 +59,17 @@
 ### We could easily figure that result out: since this dataset is actually a relation between the customer and the article he/she purchased, if one value is null, the transaction can't take place.
 ### One of the very last step we did in the previous dataset was to delete all articles  which were unknown and undefined. Now what we want is to filter the transaction dataset to only include transactions where the article's ID is present in the updated article dataset. So we can perform an inner join between the transaction dataset and the updated article dataset on the article's ID column. This will only keep rows in the transaction dataset that have a corresponding entry in the cleaned article dataset.
 ### After this merging, the transaction dataset is reduced by 11578 elements.
-### We want to analyze data by grouping the transactions by date and counting the number of transactions. This can be useful for understanding overall customer activity and identifying trends over time. ![date!](/ai_img/date15.png “Transaction Date Bar Plot)
+### We want to analyze data by grouping the transactions by date and counting the number of transactions. This can be useful for understanding overall customer activity and identifying trends over time.
+![Alt text](ai_img/date15.png)
 ### We can see that the distribution of the transaction's date is overall pretty uniform, having a peak in 2020-09-09 with exactly 20600 transactions.
 ### Then we calculate the number of unique customers and articles involved in the transactions and the number of transaction per customer (on average). 
 ### It can be extremely useful to compute the number of transaction for each item, since it can give us an idea of which items are the most popular and potentially make good recommendations.
-### Then the plot a bar plot for the top 20 article’s names ![name!](/ai_img/art_name16.png “Top 20 Article’s Name Bar Plot), top 20 article’s types [type!](/ai_img/art_type17.png “Top 20 Article’s Type Bar Plot) and top 20 sections [section!](/ai_img/section18.png “Top 20 Article’s Section Bar Plot).
+### Then the plot a bar plot for the Top 20 article’s names:
+![Alt text](ai_img/art_name16.png)
+### Top 20 article’s types:
+![Alt text](ai_img/art_type17.png)
+### Top 20 sections: 
+![Alt text](ai_img/section18.png)
 
 ## Content – based algorithm
 ### In our case, a content-based recommender system recommends articles to a user based on a comparison of the characteristics of the items. Content-based recommenders are based on the idea that if a person liked an item in the past, they will also like similar items in the future. These systems try to recommend items that are similar to those that a user liked in the past.
