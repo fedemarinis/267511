@@ -71,7 +71,7 @@
 ### Top 20 sections: 
 ![Alt text](ai_img/section18.png)
 
-## Content – based algorithm
+## Content – Based algorithm
 ### In our case, a content-based recommender system recommends articles to a user based on a comparison of the characteristics of the items. Content-based recommenders are based on the idea that if a person liked an item in the past, they will also like similar items in the future. These systems try to recommend items that are similar to those that a user liked in the past.
 ### So, the algorithm we are going to implement, uses a similarity measure, more in particular cosine similarity, to determine how closely two items match each other based on their characteristics.
 ### Since we have quite information about the articles, we have to decide which one to take into consideration when calculating the cosine similarity. 
@@ -80,7 +80,7 @@
 ### The second function we write is able to return us the most similar articles (together with more or less information about them if we slightly modify it) to the one we input to the function.
 ### The function identifies from the binary dataframe the row of the article we give as input and calculate the cosine similarity between that article and all the others before finally returning, as we just said, the most recommended ones.
 
-## Collaborative filtering algorithm
+## Collaborative Filtering algorithm
 ### A collaborative recommendation system is a type of recommendation system that makes recommendations to users based on the interactions of multiple users. The idea behind collaborative recommendation systems is that users who have similar tastes or preferences are more likely to enjoy the same items.
 ### In a user-based collaborative recommendation system, the system compares the ratings of a target user with the ratings of other users to find similar users. It then recommends items that have been highly rated by the similar users, but not necessarily by the target user.
 ### User-based collaborative recommendation systems rely on the idea of "collaborative filtering": the system filters the recommendations based on the ratings and interactions of multiple users, rather than on the characteristics of the items themselves or the characteristics of the target user.
