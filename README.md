@@ -1,6 +1,5 @@
 # Recommender System
-
-Andrea Magri, Federico De Marinis, Riccardo Milano
+# Andrea Magri, Federico De Marinis, Riccardo Milano 
 
 ## ciao 
 ### ciaoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
